@@ -97,13 +97,14 @@
         }
         
         .teacher-avatar {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: #fde68a;
-            overflow: hidden;
-        }
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fde68a;
+    overflow: hidden;
+    object-fit: cover;
+}
         
         .teacher-avatar::before {
             content: "";
@@ -139,7 +140,10 @@
 <body>
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
-       <header<img src="images/ric-bataan.jpg" alt="Teacher Avatar" class="teacher-avatar mr-4" />
+       <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-6 px-6 shadow-lg">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="images/teacher.jpg" alt="Teacher Avatar" class="teacher-avatar mr-4" />
             <h1 class="text-3xl md:text-4xl font-bold">Mix and Match with Sir Emman</h1>
         </div>
                 <div class="flex items-center space-x-6">
